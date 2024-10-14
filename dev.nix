@@ -22,7 +22,11 @@
         # Example: install JS dependencies from NPM
         # npm-install = "npm install";
         # Open editors for the following files by default, if they exist:
-        default.openFiles = [ "routes/web.php" "resources/js/Pages/Welcome.${if clientPackage == "react" then "jsx" else if clientPackage == "vue3" then "vue" else "svelte"}" ];
+        default.openFiles = [
+            "routes/web.php"  "resources/js/Pages/Welcome.vue"
+            "resources/js/Pages/Welcome.jsx"
+            "resources/js/Pages/Welcome.svelte"
+        ];
       };
       # To run something each time the workspace is (re)started, use the `onStart` hook
     };
