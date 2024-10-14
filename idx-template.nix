@@ -24,7 +24,7 @@
       composer require inertiajs/inertia-laravel:${if serverVersion == "2.x" then "2.x-dev" else serverVersion}
       php artisan inertia:middleware
       npm install @inertiajs/${clientPackage}@${clientVersion}
-      npm install vite laravel-vite-plugin
+      npm install vite laravel-vite-plugin concurrently
       npm install @vitejs/plugin-${if clientPackage == "vue3" then "vue" else clientPackage}
     '';
 }

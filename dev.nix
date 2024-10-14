@@ -35,7 +35,7 @@
       enable = true;
       previews = {
         web = {
-          command = ["php" "artisan" "serve" "--port" "$PORT" "--host" "0.0.0.0"];
+          command = ["npx" "concurrently" "-k" "-c" "\"#93C5FD,#FDBA74\"" "\"php artisan serve\" --port $PORT --host 0.0.0.0" "\"npm run dev\"" "--names=server,vite"];
           manager = "web";
         };
       };
