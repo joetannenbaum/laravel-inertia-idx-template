@@ -1,0 +1,49 @@
+{
+    "name": "Inertia + Laravel",
+    "description": "Inertia + Laravel template",
+    "categories": [
+        "Backend",
+        "Frontend"
+    ],
+    "icon": "https://www.gstatic.com/monospace/240118/logo_laravel.svg",
+    "params": [
+        {
+            "id": "clientPackage",
+            "name": "Inertia adapter",
+            "type": "enum",
+            "default": "vue3",
+            "values": [
+                "vue3",
+                "react",
+                "svelte"
+            ],
+            "required": true
+        },
+        {
+            "id": "clientVersion",
+            "name": "Inertia client version",
+            "type": "enum",
+            "default": "2.0.0-beta.1",
+            "values": [
+                "2.0.0-beta.1",
+                "1.3.0-beta.2",
+                "1.2.0",
+                "1.1.0"
+            ],
+            "required": true
+        },
+        {
+            "id": "serverVersion",
+            "name": "Inertia server version",
+            "type": "enum",
+            "default": "2.x",
+            "values": [
+                "2.x",
+                "1.3.0",
+                "1.2.0",
+                "1.1.0"
+            ],
+            "required": true
+        }
+    ]
+}
