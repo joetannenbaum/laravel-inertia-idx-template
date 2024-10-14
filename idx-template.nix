@@ -15,7 +15,7 @@
   		cp ${./dev.nix} "$out"/.idx/dev.nix
       mkdir -p "$out"/resources/js/Pages
       cp ${./resources/${clientPackage}/app.js} "$out"/resources/js/app.js
-      cp ${./resources/${clientPackage}/Welcome.${if clientPackage == "react" then "jsx" else if clientPackage == "vue" then "vue" else "svelte"}} "$out"/resources/js/Pages
+      cp ${./resources/${clientPackage}/Welcome.${if clientPackage == "react" then "jsx" else if clientPackage == "vue3" then "vue" else "svelte"}} "$out"/resources/js/Pages
       cp ${./resources/app.blade.php} "$out"/resources/views/app.blade.php
       cp ${./resources/app.php} "$out"/bootstrap/app.php
       cp ${./resources/web.php} "$out"/routes/web.php
