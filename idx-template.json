@@ -12,11 +12,11 @@
             "name": "Inertia adapter",
             "type": "enum",
             "default": "vue3",
-            "values": [
-                "vue3",
-                "react",
-                "svelte"
-            ],
+            "options": {
+                "vue3": "vue3",
+                "react": "react",
+                "svelte": "svelte"
+            },
             "required": true
         },
         {
@@ -24,12 +24,12 @@
             "name": "Inertia client version",
             "type": "enum",
             "default": "2.0.0-beta.1",
-            "values": [
-                "2.0.0-beta.1",
-                "1.3.0-beta.2",
-                "1.2.0",
-                "1.1.0"
-            ],
+            "options": {
+                "2.0.0-beta.1": "2.0.0-beta.1",
+                "1.3.0-beta.2": "1.3.0-beta.2",
+                "1.2.0": "1.2.0",
+                "1.1.0": "1.1.0"
+            },
             "required": true
         },
         {
@@ -37,12 +37,12 @@
             "name": "Inertia server version",
             "type": "enum",
             "default": "2.x",
-            "values": [
-                "2.x",
-                "1.3.0",
-                "1.2.0",
-                "1.1.0"
-            ],
+            "options": {
+                "2.x-dev": "2.x",
+                "1.3.0": "1.3.0",
+                "1.2.0": "1.2.0",
+                "1.1.0": "1.1.0"
+            },
             "required": true
         }
     ]
